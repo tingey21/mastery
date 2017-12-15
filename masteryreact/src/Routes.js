@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import React, { Component } from 'react'
 import Landing from './components/landing'
 import Page from './components/page'
+import UsesRedux from './components/UsesRedux'
 export default class Routes extends Component {
   render() {
     return (
@@ -11,6 +12,7 @@ export default class Routes extends Component {
             <Switch>
                 <Route exact path = '/' component = {Landing}/>
                 <Route path = '/page/:id' component = {Page} />
+                <Route path = '/redux' component = {UsesRedux} />
             </Switch>
         </Router>
       </div>
