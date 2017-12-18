@@ -1,0 +1,109 @@
+:root{
+    --I-AM-A-VARIABLE: yellow;
+}
+
+p +p{
+    color: red
+}
+
+.test, .div2{
+    height: 100px;
+    width: 200px;
+    color: blue;
+    background: linear-gradient( blue, red )
+}
+#IDMOTHAFKER{
+    background: red;
+    height: 100px;
+}
+
+.div4{
+    width: 50%;
+}
+.div4 > div{
+    background: blue;
+}
+
+.div5 p{
+    color: brown;
+}
+.image{
+    height: 200vh;
+    background-image: url("https://vignette.wikia.nocookie.net/uncyclopedia/images/d/dc/Chuck-norris-002.jpg/revision/latest?cb=20080312162141")
+}
+.margin-magic{
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    color: pink;
+    background: black;
+    padding: 100px;
+    border: 3px pink dotted;
+    
+
+}
+.fixed{
+    position: fixed;
+    color: white;
+    font-weight: 700;
+    font-size: 100px;
+    background: black;
+}
+
+.relative{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background: blue;
+}
+.abs{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    background: red;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+.float{
+    height: 100px;
+    width: 100px;
+    float: right;
+    background: var(--I-AM-A-VARIABLE);
+
+}
+.grid{
+    height: 20%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "grid1 grid2"
+    "grid1 grid2"
+    "grid3 grid3"
+}
+.grid1{
+    grid-area: grid1;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap
+}
+.grid2{
+    grid-area: grid2;
+    background: rgb(0, 0, 0);
+
+
+}
+
+.grid2 p{
+    font-size: 50px;
+    color: rgba(0,0,0,0.6);
+    text-shadow: 10px 10px 3px rgba(255, 63, 63, 0.712);
+}
+.grid3{
+    background:  var(--I-AM-A-VARIABLE);
+    grid-area: grid3;
+    box-shadow: 10px 5px 5px red;
+}
